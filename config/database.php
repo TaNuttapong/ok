@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
 $dbname = 'ok_market_db';
-$username = 'root';
-$password = '';
+$username = 'okmarket';
+$password = 'Qazwsx1234$#';
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
