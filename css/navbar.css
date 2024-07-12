@@ -1,0 +1,48 @@
+.mobile-nav {
+  background: #ffffff;
+  position: fixed;
+  bottom: 0;
+  height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-top: #e80000 solid 3px;
+}
+
+.bloc-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-nav a {
+  color: #e80000 !important;
+}
+
+.bloc-icon i {
+  width: 50px;
+}
+
+@media screen and (min-width: 600px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+.navbar-nav {
+  flex-direction: row;
+}
+.nav-item {
+  margin: 0 10px;
+}
+.navbar-brand {
+  margin-left: auto;
+  margin-right: auto;
+}
