@@ -4,6 +4,12 @@ require_once '../../../src/functions.php';
 
 session_start();
 
+// ตรวจสอบว่าผู้ใช้ล็อกอินแล้วหรือไม่
+if (isset($_SESSION['user']) && $_SESSION['user']['role'] == 'shop') {
+    header("Location: ../dashboard.php");
+    exit();
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone_number = $_POST['phone_number'];
 
